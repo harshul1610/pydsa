@@ -1,5 +1,6 @@
 # Depth First Search
 # Complexity: O(V+E)
+#uses concept of list
 
 def dfsearch(graph,s):
     stack = list()
