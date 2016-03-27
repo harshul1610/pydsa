@@ -1,7 +1,7 @@
 # Depth First Search
 # Complexity: O(V+E)
 
-def dfs(graph,s):
+def dfsearch(graph,s):
     stack = list()
     visited=list()
     stack.append(s)
@@ -13,11 +13,3 @@ def dfs(graph,s):
                 visited.append(subadjnode)
                 stack.append(subadjnode)
     return visited
-
-graph = {'A':['B', 'C'],
-         'B':['A', 'D', 'E'],
-         'C':['A', 'F'],
-         'D':['B'],
-         'E':['B', 'F'],
-         'F':['C', 'E']}
-print dfs(graph,'A')
