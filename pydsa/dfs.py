@@ -1,13 +1,14 @@
 # Depth First Search
 # Complexity: O(V+E)
-#uses concept of list
+# uses stack
 
-def dfsearch(graph,s):
+
+def dfs(graph, start):
     stack = list()
-    visited=list()
-    stack.append(s)
-    visited.append(s)
-    while(len(stack)>0):
+    visited = list()
+    stack.append(start)
+    visited.append(start)
+    while len(stack) > 0:
         node = stack.pop()
         for subadjnode in graph[node]:
             if subadjnode not in visited:
